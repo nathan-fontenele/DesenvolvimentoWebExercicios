@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herança e especifidade</title>
+    <style>
+        /*No caso de dois seletores iguais vale o último a ser aplicado por conta da especificidade com exceção se estiver marcado com !important
+        p{
+            color: blue !important;
+        }
+        */
+
+        /*No caso de regra mais específicas cono no caso abaixo a propriedade tem uma ordem de precedência maior então ela que passa a valer em todos os casos aplicados.
+        .pagina p{
+            color:blue;
+        }
+        */
+
+        /*Id é mais específico do que class*/
+
+        p.verde{
+            color: green;
+        }
+
+        p#vermelho{
+            color: red;
+        }
+
+        p{
+            color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="pagina">
+        <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi sit omnis facilis unde labore.</h2>
+
+        <p class="verde" id="vermelho">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi corrupti quas blanditiis vitae earum. Quae distinctio natus nobis? Nesciunt vero laborum recusandae natus labore facere delectus sequi molestiae sit atque.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eveniet voluptatibus libero expedita, vitae quos! Nam distinctio, numquam alias magnam architecto recusandae, eaque velit voluptates debitis suscipit excepturi deleniti dolorem?</p>
+    </div>
+</body>
+</html>
