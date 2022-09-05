@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+    <style>
+        h3{
+            background-color: bisque;
+        }
+        li>a{
+            color: red;
+            text-decoration: none;
+        }
+
+        p a{
+            color: pink;
+            display: block;
+        }
+
+        h4+p{
+            color: coral;
+        }
+
+        h5~p{
+            color: darkseagreen;
+        }
+    </style>
+</head>
+<body>
+    <h3>Seletor filho li>a</h3>
+    <ul>
+        <li><a href="#">Seletor filho (direto)</a></li>
+        <li><a href="#">Seletor filho (direto)</a></li>
+        <li><a href="#">Seletor filho (direto)</a></li>
+
+        <li>
+            <span>
+                <a href="#">Seletor filho (não direto)</a>
+            </span>
+        </li>
+        <li>
+            <span>
+                <a href="#">Seletor filho (não direto)</a>
+            </span>
+        </li>
+        <li>
+            <span>
+                <a href="#">Seletor filho (não direto)</a>
+            </span>
+        </li>
+        
+    </ul>
+
+    <h3>Seletor descendente</h3>
+    <p>
+        <a href="#">Seletor descendente (direto)</a>
+        <a href="#">Seletor descendente (direto)</a>
+        <a href="#">Seletor descendente (direto)</a>
+        <span>
+            <a href="#">Seletor descendente (não direto)</a>
+        </span>
+        <span>
+            <a href="#">Seletor descendente (não direto)</a>
+        </span>
+        <span>
+            <a href="#">Seletor descendente (não direto)</a>
+        </span>
+    </p>
+
+    <h3>Filho de irmão adjacente</h3>
+    <h4>Seletor de irmão adjacente (h4)</h4>
+    <p>1° parágrafo abaixo de h4</p>
+    <p>2° parágrafo abaixo de h4</p>
+    <p>3° parágrafo abaixo de h4</p>
+    <p>4° parágrafo abaixo de h4</p>
+
+    <h3>Seletor de irmão geral</h3>
+    <h5>Seletor de imão adjacente (h5)</h5>
+    <p>1° parágrafo abaixo de h5</p>
+    <p>2° parágrafo abaixo de h5</p>
+    <p>3° parágrafo abaixo de h5</p>
+    <p>4° parágrafo abaixo de h5</p>
+    <div>
+        <p>5° parágrafo não direto</p>
+    </div>
+</body>
+</html>
