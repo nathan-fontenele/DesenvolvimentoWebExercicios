@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font: normal normal 16px Arial, Helvetica, sans-serif;
+}
+
+h3{
+    padding: 10px;
+    font-size: 2em;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: url(../img/fundo-horizontal.png);
+    float: left;
+    width: 720px;
+}
+
+ul li{
+    float: left;
+}
+
+ul a{
+    text-decoration: none;
+    display: block;
+    padding: 0em 2em;
+    color: #fff;
+    font: normal normal 17px/2em Verdana, Geneva, sans-serif;
+    background: url(../img/divisor.png) repeat-y;
+}
+
+ul .primeiro a{
+    background: none;
+}
+
+ul a:hover{
+    background: #1b98e0;
+    color: #fff;
+}
+
+#home .home a,
+#sobre .sobre a,
+#contato .contato a,
+#produtos .produtos a{
+    background-position: right bottom;
+    color: #fff;
+    background-color: #1b98e0;
+}
